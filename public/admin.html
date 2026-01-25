@@ -1,0 +1,184 @@
+<!-- 
+    PÁGINA: admin.html (Panel de Control)
+    DESCRIPCIÓN: Esta es la pantalla principal para el administrador. 
+    Desde acá se controlan los usuarios, productos y se ven las ventas del negocio.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | MyFoodtruck</title>
+
+    <!-- Hojas de estilo modulares -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/dashboard.css"> <!-- Estilos específicos del panel -->
+    <link rel="stylesheet" href="css/modals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Scripts de seguridad -->
+    <script src="js/controlacceso.js"></script>
+    <script>
+        checkAuth('admin'); // Solo permite el paso si el usuario es ADMINISTRADOR
+    </script>
+
+    <div class="dashboard-container">
+        <!-- BARRA LATERAL (Sidebar) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>MyFoodtruck</h2>
+                <small>ADMINISTRADOR</small>
+            </div>
+            <nav>
+                <button class="btn" onclick="showSection('users')">Usuarios</button>
+                <button class="btn" onclick="showSection('categories')">Categorías</button>
+                <button class="btn" onclick="showSection('products')">Productos</button>
+                <button class="btn" onclick="showSection('sales')">Ventas</button>
+            </nav>
+        </aside>
+
+        <!-- ÁREA CENTRAL DE CONTENIDO -->
+        <main class="content">
+            <header class="content-header">
+                <h1 id="section-title">Usuarios</h1>
+                <div class="user-info">
+                    <span id="admin-name">Cargando...</span>
+                    <!-- Acceso rápido al perfil personal -->
+                    <a href="#" class="btn-sm-profile" onclick="openProfileModal()">Mi Perfil</a>
+                    <button class="btn-sm-logout" onclick="logout()">Cerrar Sesión</button>
+                </div>
+            </header>
+
+            <!-- SECCIÓN: GESTIÓN DE USUARIOS -->
+            <section id="users-section" class="admin-section">
+                <div class="actions">
+                    <button class="btn btn-primary" onclick="openModal('user')">Nuevo Usuario</button>
+                </div>
+                <table id="users-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users-body"></tbody> <!-- JavaScript llena esto con datos -->
+                </table>
+            </section>
+
+            <!-- SECCIÓN: GESTIÓN DE CATEGORÍAS -->
+            <section id="categories-section" class="admin-section">
+                <div class="actions">
+                    <button class="btn btn-primary" onclick="openModal('category')">Nueva Categoría</button>
+                </div>
+                <table id="categories-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="categories-body"></tbody>
+                </table>
+            </section>
+
+            <!-- SECCIÓN: GESTIÓN DE PRODUCTOS -->
+            <section id="products-section" class="admin-section">
+                <div class="actions">
+                    <button class="btn btn-primary" onclick="openModal('product')">Nuevo Producto</button>
+                </div>
+                <table id="products-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Stock Mín.</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="products-body"></tbody>
+                </table>
+            </section>
+
+            <!-- SECCIÓN: REPORTE DE VENTAS -->
+            <section id="sales-section" class="admin-section">
+                <div class="filters">
+                    <input type="date" id="sale-start" class="input-styled" style="width: auto; display: inline-block;">
+                    <input type="date" id="sale-end" class="input-styled" style="width: auto; display: inline-block;">
+                    <button class="btn btn-primary" onclick="loadSalesReport()">Filtrar</button>
+                </div>
+                <div id="sales-summary" class="summary-cards">
+                    <div class="card">
+                        <h3>Total General</h3>
+                        <p id="total-amount">$0</p>
+                    </div>
+                    <div class="card cash-card">
+                        <h3>Total Efectivo</h3>
+                        <p id="total-cash">$0</p>
+                    </div>
+                    <div class="card transfer-card">
+                        <h3>Total Tarjeta</h3>
+                        <p id="total-transfer">$0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ventas Totales</h3>
+                        <p id="total-sales-count">0</p>
+                    </div>
+                </div>
+                <table id="sales-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Vendedor</th>
+                            <th>Método</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sales-body"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- MODAL ÚNICO: Crear/Editar -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Editar</h2>
+            <form id="modal-form" class="modal-form"></form>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+                <button class="btn btn-primary" id="modal-save">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE CONFIRMACIÓN -->
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content confirm-modal-content">
+            <div class="alert-icon-container">
+                <span class="alert-icon">⚠️</span>
+            </div>
+            <h2 id="confirm-title">¿Confirmar Acción?</h2>
+            <p id="confirm-message">Esta acción no se puede
+                deshacer.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="resolveConfirm(false)">Cancelar</button>
+                <button class="btn btn-danger" onclick="resolveConfirm(true)">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/controlacceso.js"></script>
+    <script src="js/perfil.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+/**
+ * ARCHIVO: login.css
+ * FUNCIÓN: Diseño de la Pantalla de Inicio
+ * DESCRIPCIÓN: Acá puse el estilo de "cristal" para el login. Es lo que hace 
+ * que se vea moderno y profesional cuando uno entra por primera vez.
+ */
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    /* Efecto Glassmorphism */
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+/* TÍTULO CON GRADIENTE */
+.login-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--primary), var(--primary-dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-header p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Nota: Los inputs y el botón principal usan las clases globales .input-styled y .btn-primary definidas en base.css */
+
+.forgot-password {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.forgot-password a:hover {
+    color: var(--primary);
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    /* Oculto por defecto */
+}
+
+/* ESTADOS DE ERROR Y ÉXITO PARA EL LOGIN */
+.error {
+    background: rgba(255, 71, 87, 0.2);
+    color: #ff4757;
+    display: block !important;
+}
+
+.success {
+    background: rgba(46, 213, 115, 0.2);
+    color: #2ed573;
+    display: block !important;
+}

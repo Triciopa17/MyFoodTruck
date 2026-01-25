@@ -1,0 +1,277 @@
+/**
+ * ARCHIVO: base.css
+ * FUNCIÓN: Estilos Globales y Variables
+ * DESCRIPCIÓN: Este es el archivo principal de diseño. Acá definí los colores premium, 
+ * las fuentes y los estilos que se repiten en toda la aplicación (botones y cajas de texto).
+ */
+
+:root {
+    /* PALETA DE COLORES PREMIUM */
+    --primary: #f0932b;
+    /* Naranja principal */
+    --primary-dark: #eb4d4b;
+    /* Rojo para alertas o estados críticos */
+    --accent: #8b5cf6;
+    /* Violeta para toques modernos */
+    --dark: #130f40;
+    /* Azul marino muy oscuro para fondos */
+    --light: #f9f9f9;
+    /* Blanco roto para textos legibles */
+
+    /* EFECTOS DE DISEÑO */
+    --glass: rgba(255, 255, 255, 0.1);
+    /* Transparencia tipo cristal */
+    --glass-border: rgba(255, 255, 255, 0.2);
+    /* Borde sutil para el cristal */
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* Sombra elegante */
+    --transition: all 0.3s ease;
+    /* Transición suave para todos los efectos */
+}
+
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--dark) 0%, #30336b 100%);
+    min-height: 100vh;
+    color: var(--light);
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CLASES GLOBALES */
+.btn-logout {
+    background: transparent;
+    border: none;
+    color: #ff4757;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-logout:hover {
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #f0f2f5;
+    color: var(--dark);
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 5px;
+}
+
+/* CONTENEDOR DE INFORMACIÓN DE USUARIO (Header) */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.user-info span {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/* BOTÓN DE PERFIL (Acceso rápido) */
+.btn-sm-profile {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-sm-profile:hover {
+    background: rgba(240, 147, 43, 0.1);
+}
+
+/* BOTÓN DE SALIDA (Small) */
+.btn-sm-logout {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-sm-logout:hover {
+    background: #eb4d4b;
+    transform: translateY(-1px);
+}
+
+/* --- COMPONENTES REUTILIZABLES --- */
+
+/* BOTONES GLOBALES */
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--primary), var(--primary-dark));
+    color: white;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(235, 77, 75, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Variante para botones secundarios en fondo blanco (Admin) */
+.dashboard-container .btn-secondary {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.btn-danger {
+    background: #ff4757 !important;
+    color: white;
+}
+
+.btn-accent {
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    color: white;
+}
+
+/* CAMPOS DE TEXTO ADAPTABLES */
+.input-styled {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    /* Por defecto blanco (Admin) */
+    color: var(--dark);
+    outline: none;
+    transition: var(--transition);
+}
+
+/* Variante para fondos oscuros (Login/POS Modals) */
+.login-card .input-styled,
+.modal-content .input-styled,
+.pos-main .input-styled {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid var(--glass-border);
+}
+
+.input-styled:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(240, 147, 43, 0.1);
+}
+
+/* Corrección para selectores y calendarios */
+input[type="date"].input-styled {
+    color-scheme: light;
+    /* Default light */
+}
+
+.login-card input[type="date"],
+.modal-content input[type="date"] {
+    color-scheme: dark;
+}
+
+select.input-styled option {
+    background: white;
+    color: black;
+}
+
+.modal-content select.input-styled option {
+    background: #1e293b;
+    color: white;
+}

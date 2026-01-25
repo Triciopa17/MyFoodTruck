@@ -1,0 +1,132 @@
+[
+  {
+    "_id": "69643225bd97da1983b6a3a3",
+    "name": "Hamburguesa Clasica",
+    "price": 5990,
+    "categoryId": "696431eebd97da1983b6a3a1",
+    "categoryName": "Hamburguesa",
+    "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+    "minStock": 10,
+    "stock": 92
+  },
+  {
+    "_id": "6964323cbd97da1983b6a3a4",
+    "name": "Churrasco Chacarero",
+    "price": 4990,
+    "categoryId": "696431fbbd97da1983b6a3a2",
+    "categoryName": "Sandwich",
+    "stock": 90,
+    "description": "Carne de res, tomate, poroto verde, ají verde y mayonesa casera.",
+    "minStock": 10
+  },
+  {
+    "_id": "696c0149ead683e149a42728",
+    "name": "Papas Fritas Chicas",
+    "price": 2990,
+    "categoryId": "6969a5cdfd462433768fccab",
+    "categoryName": "Papas Fritas",
+    "stock": 91,
+    "minStock": 10,
+    "description": "200Grs Papas Fritas Naturales."
+  },
+  {
+    "_id": "69741ac111add9399ac34785",
+    "name": "Hamburguesa Cuarto de Libra",
+    "price": 5990,
+    "categoryId": "696431eebd97da1983b6a3a1",
+    "categoryName": "Hamburguesa",
+    "stock": 34,
+    "minStock": 10,
+    "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa."
+  },
+  {
+    "_id": "69741b3a11add9399ac34786",
+    "name": "Hamburguesa BBQ",
+    "price": 6990,
+    "categoryId": "696431eebd97da1983b6a3a1",
+    "categoryName": "Hamburguesa",
+    "stock": 33,
+    "minStock": 10,
+    "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ."
+  },
+  {
+    "_id": "69741ba611add9399ac34787",
+    "name": "Churrasco Italiano",
+    "price": 4990,
+    "categoryId": "696431fbbd97da1983b6a3a2",
+    "categoryName": "Sandwich",
+    "stock": 31,
+    "minStock": 10,
+    "description": "Carne de res, tomate, palta y mayonesa casera."
+  },
+  {
+    "_id": "69741bda11add9399ac34788",
+    "name": "Churrasco Barros Luco",
+    "price": 5490,
+    "categoryId": "696431fbbd97da1983b6a3a2",
+    "categoryName": "Sandwich",
+    "stock": 47,
+    "minStock": 10,
+    "description": "Carne de res y queso fundido."
+  },
+  {
+    "_id": "69741c5b11add9399ac3478b",
+    "name": "Completo italiano",
+    "price": 2490,
+    "categoryId": "6974185911add9399ac34783",
+    "categoryName": "Completos",
+    "stock": 98,
+    "minStock": 20,
+    "description": "Salchicha sureña, tomate, palta y mayonesa casera."
+  },
+  {
+    "_id": "69741caf11add9399ac3478c",
+    "name": "Completo ",
+    "price": 2990,
+    "categoryId": "6974185911add9399ac34783",
+    "categoryName": "Completos",
+    "stock": 96,
+    "minStock": 20,
+    "description": "Salchicha sureña, tomate, palta, chucrut y mayonesa casera."
+  },
+  {
+    "_id": "69741cde11add9399ac3478d",
+    "name": "Completo dinámico",
+    "price": 3490,
+    "categoryId": "6974185911add9399ac34783",
+    "categoryName": "Completos",
+    "stock": 93,
+    "minStock": 20,
+    "description": "Salchicha Llanquihue, tomate, palta, chucrut, salsa americana y mayonesa casera."
+  },
+  {
+    "_id": "6975579f7dfc48f9a076bbbe",
+    "name": "Coca cola Express",
+    "price": 700,
+    "categoryId": "697418c211add9399ac34784",
+    "categoryName": "Bebidas",
+    "stock": 99,
+    "minStock": 10,
+    "description": "220cc"
+  },
+  {
+    "_id": "697557b67dfc48f9a076bbbf",
+    "name": "Pepsi Express",
+    "price": 700,
+    "categoryId": "697418c211add9399ac34784",
+    "categoryName": "Bebidas",
+    "stock": 99,
+    "minStock": 10,
+    "description": "220cc"
+  },
+  {
+    "_id": "69756072cc8da80b7dfc5ec4",
+    "name": "Papas Fritas Grandes",
+    "price": 4990,
+    "categoryId": "6969a5cdfd462433768fccab",
+    "categoryName": "Papas Fritas",
+    "stock": 98,
+    "minStock": 10,
+    "description": "500Grs Papas Fritas Naturales."
+  }
+]

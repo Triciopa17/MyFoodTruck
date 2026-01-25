@@ -1,0 +1,110 @@
+<!-- 
+    PÁGINA: index.html (Login)
+    DESCRIPCIÓN: Esta es la puerta de entrada a mi sistema MyFoodtruck. 
+    Aquí es donde los usuarios se autentican para entrar a trabajar.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MyFoodtruck</title>
+
+    <!-- Importación de hojas de estilo (CSS) -->
+    <link rel="stylesheet" href="css/base.css"> <!-- Estilos base y variables -->
+    <link rel="stylesheet" href="css/modals.css"> <!-- Estilos para las ventanas flotantes (Modales) -->
+    <link rel="stylesheet" href="css/login.css"> <!-- Estilos específicos de la pantalla de login -->
+
+    <!-- Fuente premium desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Contenedor principal de la pantalla de inicio de sesión -->
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Encabezado con Logo y Título -->
+            <div class="login-header">
+                <div class="logo">
+                    <img src="img/foodtruck.jpg" alt="Logo">
+                </div>
+                <h1>MyFoodtruck</h1>
+                <p>Bienvenido de nuevo</p>
+            </div>
+
+            <!-- Formulario de acceso -->
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" class="input-styled" placeholder="Ingresa tu usuario" required
+                        autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" class="input-styled" placeholder="••••••••" required
+                        autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Ingresar</button>
+
+                <!-- Enlace para disparar el flujo de recuperación de clave -->
+                <div class="forgot-password">
+                    <a href="#" onclick="showRecoveryModal(event)">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+
+            <!-- Espacio para mostrar mensajes de error o éxito del login -->
+            <div id="loginMessage" class="message"></div>
+        </div>
+    </div>
+
+    <!-- VENTANA MODAL: RECUPERACIÓN DE CONTRASEÑA -->
+    <div id="recovery-modal" class="modal" style="display: none;">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h2>Recuperar Contraseña</h2>
+                <button onclick="closeRecoveryModal()" class="btn-close-modal">×</button>
+            </div>
+
+            <!-- Ingreso de usuario para generar código -->
+            <div id="recovery-step-1">
+                <p style="margin-bottom: 1.5rem; color: #ccc; font-size: 0.9rem;">
+                    Ingresa tu nombre de usuario para recibir un código de recuperación.
+                </p>
+                <div class="form-group">
+                    <label>Usuario</label>
+                    <input type="text" id="recovery-username" class="input-styled" placeholder="Ej: admin">
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" onclick="submitRecoveryRequest()">Obtener
+                    Código</button>
+            </div>
+
+            <!-- Ingreso del código y nueva clave -->
+            <div id="recovery-step-2" style="display: none;">
+                <p style="margin-bottom: 1.5rem; color: #10b981; font-size: 0.9rem; font-weight: bold;">
+                    Código generado: <span id="display-code" style="font-size: 1.2rem; color: white;">------</span>
+                </p>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label>Ingresa el Código</label>
+                    <input type="text" id="recovery-code" class="input-styled" placeholder="6 dígitos">
+                </div>
+                <div class="form-group">
+                    <label>Nueva Contraseña</label>
+                    <input type="password" id="recovery-new-password" class="input-styled"
+                        placeholder="Mínimo 6 caracteres">
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" onclick="submitPasswordReset()">Restablecer
+                    Contraseña</button>
+            </div>
+
+            <!-- Mensajes internos del modal de recuperación -->
+            <div id="recovery-message" style="margin-top: 1rem; text-align: center; font-size: 0.9rem;"></div>
+        </div>
+    </div>
+
+    <!-- Lógica de JavaScript para manejar el Login y el Modal -->
+    <script src="js/controlacceso.js"></script>
+</body>
+
+</html>

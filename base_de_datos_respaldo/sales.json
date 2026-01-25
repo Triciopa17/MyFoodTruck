@@ -1,0 +1,1363 @@
+[
+  {
+    "_id": "69657bd5f2727d7f34b8348f",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-12T22:55:17.668Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6969a6c5f33aff4d810b9bac",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 100,
+        "quantity": 6
+      },
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 200,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 4
+      }
+    ],
+    "total": 55900,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-16T02:47:33.789Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696677aded349142737b79d0",
+    "items": [
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "quantity": 1
+      }
+    ],
+    "total": 4990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-13T16:49:49.930Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6966813924eb1831e8747261",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 7,
+        "quantity": 1
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 0,
+        "quantity": 1
+      }
+    ],
+    "total": 10980,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-13T17:30:33.224Z",
+    "sellerId": "69667e6024eb1831e874725f",
+    "sellerName": "Maria Jose Baez"
+  },
+  {
+    "_id": "69699842b8f0ecf568ffed0a",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 6,
+        "quantity": 4
+      }
+    ],
+    "total": 23960,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-16T01:45:38.355Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "69643259bd97da1983b6a3a5",
+    "items": [
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "quantity": 2
+      },
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "quantity": 2
+      }
+    ],
+    "total": 21960,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-11T23:29:29.554Z",
+    "sellerId": "69642f79cb1a5e49022fca07",
+    "sellerName": "Vendedor Juan"
+  },
+  {
+    "_id": "69667e7624eb1831e8747260",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 8,
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-13T17:18:46.899Z",
+    "sellerId": "69667e6024eb1831e874725f",
+    "sellerName": "Maria Jose Baez"
+  },
+  {
+    "_id": "6969a2e8fd462433768fccaa",
+    "items": [
+      {
+        "_id": "69699bc757f4a3ebbbffd56a",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "69699ba257f4a3ebbbffd569",
+        "categoryName": "Papas Fritas",
+        "stock": 99,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales.",
+        "quantity": 4
+      }
+    ],
+    "total": 19960,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-16T02:31:04.545Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6969a6d1f33aff4d810b9bad",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 94,
+        "quantity": 5
+      }
+    ],
+    "total": 29950,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-16T02:47:45.295Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69643304bd97da1983b6a3a6",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-11T23:32:20.091Z",
+    "sellerId": "69642f79cb1a5e49022fca07",
+    "sellerName": "Vendedor Juan"
+  },
+  {
+    "_id": "69657a8bf2727d7f34b8348e",
+    "items": [
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "quantity": 1
+      },
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "quantity": 1
+      }
+    ],
+    "total": 10980,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-12T22:49:47.309Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6965aa0bf2727d7f34b83490",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 10,
+        "quantity": 1
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "quantity": 2
+      }
+    ],
+    "total": 15970,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-13T02:12:27.363Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6966768a08f1ab0d7e26ec37",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 10,
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-13T16:44:58.728Z",
+    "sellerId": "69642f79cb1a5e49022fca07",
+    "sellerName": "Vendedor Juan"
+  },
+  {
+    "_id": "696676a208f1ab0d7e26ec38",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 9,
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-13T16:45:22.668Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6969984fb8f0ecf568ffed0b",
+    "items": [
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 0,
+        "quantity": 3
+      }
+    ],
+    "total": 14970,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-16T01:45:51.229Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "6969a2dffd462433768fcca9",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 2,
+        "quantity": 1
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 0,
+        "quantity": 1
+      },
+      {
+        "_id": "69699bc757f4a3ebbbffd56a",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "69699ba257f4a3ebbbffd569",
+        "categoryName": "Papas Fritas",
+        "stock": 100,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales.",
+        "quantity": 1
+      }
+    ],
+    "total": 15970,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-16T02:30:55.343Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio"
+  },
+  {
+    "_id": "696ae4855011b0d6bdf57ff7",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "undefined",
+        "minStock": 9,
+        "stock": 89,
+        "quantity": 3
+      }
+    ],
+    "total": 17970,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-17T01:23:17.501Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696bff18ead683e149a42726",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 5,
+        "stock": 5,
+        "quantity": 5
+      }
+    ],
+    "total": 29950,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-17T21:28:56.729Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696bff24ead683e149a42727",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 5,
+        "stock": 0,
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-17T21:29:08.210Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696c01cdead683e149a42729",
+    "items": [
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 100,
+        "description": "",
+        "minStock": 10,
+        "quantity": 2
+      },
+      {
+        "_id": "696c0149ead683e149a42728",
+        "name": "Papas Fritas Chicas",
+        "price": 2990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 100,
+        "minStock": 10,
+        "description": "200Grs Papas Fritas Naturales.",
+        "quantity": 2
+      }
+    ],
+    "total": 15960,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-17T21:40:29.821Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696c01e4ead683e149a4272a",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 5,
+        "stock": 0,
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-17T21:40:52.188Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696c0da07c32dc013948ea28",
+    "items": [
+      {
+        "_id": "696c0149ead683e149a42728",
+        "name": "Papas Fritas Chicas",
+        "price": 2990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 98,
+        "minStock": 10,
+        "description": "200Grs Papas Fritas Naturales.",
+        "quantity": 3
+      }
+    ],
+    "total": 8970,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-17T22:30:56.456Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696e4ceb4ae8bab6792a6503",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 5,
+        "stock": 0,
+        "quantity": 3
+      }
+    ],
+    "total": 17970,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-19T15:25:31.145Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696e564081db1065785ddda6",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 5,
+        "stock": 0,
+        "quantity": 2
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 98,
+        "description": "",
+        "minStock": 10,
+        "quantity": 3
+      },
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 196,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 3
+      }
+    ],
+    "total": 41920,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-19T16:05:20.343Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "696e577b81db1065785ddda7",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 5,
+        "stock": 0,
+        "quantity": 2
+      }
+    ],
+    "total": 11980,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-19T16:10:35.906Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "6972abb30fb684a5ae665c35",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "",
+        "minStock": 10,
+        "stock": 100,
+        "quantity": 1
+      }
+    ],
+    "total": 5990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-22T22:58:59.044Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69741bfb11add9399ac34789",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 99,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ac111add9399ac34785",
+        "name": "Hamburguesa Cuarto de Libra",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 40,
+        "minStock": 10,
+        "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 40,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      }
+    ],
+    "total": 18970,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-24T01:10:19.051Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69741c0811add9399ac3478a",
+    "items": [
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Churrasco Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 95,
+        "description": "Carne de res, tomate, poroto verde, ají verde y mayonesa casera.",
+        "minStock": 10,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ba611add9399ac34787",
+        "name": "Churrasco Italiano",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 35,
+        "minStock": 10,
+        "description": "Carne de res, tomate, palta y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741bda11add9399ac34788",
+        "name": "Churrasco Barros Luco",
+        "price": 5490,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 50,
+        "minStock": 10,
+        "description": "Carne de res y queso fundido.",
+        "quantity": 1
+      }
+    ],
+    "total": 15470,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-24T01:10:32.214Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69741d1d11add9399ac3478e",
+    "items": [
+      {
+        "_id": "69741cde11add9399ac3478d",
+        "name": "Completo dinámico",
+        "price": 3490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 100,
+        "minStock": 20,
+        "description": "Salchicha Llanquihue, tomate, palta, chucrut, salsa americana y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741caf11add9399ac3478c",
+        "name": "Completo ",
+        "price": 2990,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 100,
+        "minStock": 20,
+        "description": "Salchicha sureña, tomate, palta, chucrut y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "696c0149ead683e149a42728",
+        "name": "Papas Fritas Chicas",
+        "price": 2990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 95,
+        "minStock": 10,
+        "description": "200Grs Papas Fritas Naturales.",
+        "quantity": 1
+      },
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 193,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 1
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Churrasco Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 94,
+        "description": "Carne de res, tomate, poroto verde, ají verde y mayonesa casera.",
+        "minStock": 10,
+        "quantity": 2
+      },
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 98,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ac111add9399ac34785",
+        "name": "Hamburguesa Cuarto de Libra",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 39,
+        "minStock": 10,
+        "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 39,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      }
+    ],
+    "total": 43410,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-24T01:15:09.854Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69755452ec06fc93f4455dc2",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 97,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ba611add9399ac34787",
+        "name": "Churrasco Italiano",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 34,
+        "minStock": 10,
+        "description": "Carne de res, tomate, palta y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "696c0149ead683e149a42728",
+        "name": "Papas Fritas Chicas",
+        "price": 2990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 94,
+        "minStock": 10,
+        "description": "200Grs Papas Fritas Naturales.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741cde11add9399ac3478d",
+        "name": "Completo dinámico",
+        "price": 3490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 99,
+        "minStock": 20,
+        "description": "Salchicha Llanquihue, tomate, palta, chucrut, salsa americana y mayonesa casera.",
+        "quantity": 1
+      }
+    ],
+    "total": 17460,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-24T23:22:58.589Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "6975575b7dfc48f9a076bbbc",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 96,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ac111add9399ac34785",
+        "name": "Hamburguesa Cuarto de Libra",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 38,
+        "minStock": 10,
+        "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 38,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741ba611add9399ac34787",
+        "name": "Churrasco Italiano",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 33,
+        "minStock": 10,
+        "description": "Carne de res, tomate, palta y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Churrasco Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 92,
+        "description": "Carne de res, tomate, poroto verde, ají verde y mayonesa casera.",
+        "minStock": 10,
+        "quantity": 1
+      },
+      {
+        "_id": "69741bda11add9399ac34788",
+        "name": "Churrasco Barros Luco",
+        "price": 5490,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 49,
+        "minStock": 10,
+        "description": "Carne de res y queso fundido.",
+        "quantity": 1
+      },
+      {
+        "_id": "696c0149ead683e149a42728",
+        "name": "Papas Fritas Chicas",
+        "price": 2990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 93,
+        "minStock": 10,
+        "description": "200Grs Papas Fritas Naturales.",
+        "quantity": 1
+      },
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 192,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 1
+      },
+      {
+        "_id": "69741cde11add9399ac3478d",
+        "name": "Completo dinámico",
+        "price": 3490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 98,
+        "minStock": 20,
+        "description": "Salchicha Llanquihue, tomate, palta, chucrut, salsa americana y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741caf11add9399ac3478c",
+        "name": "Completo ",
+        "price": 2990,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 99,
+        "minStock": 20,
+        "description": "Salchicha sureña, tomate, palta, chucrut y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741c5b11add9399ac3478b",
+        "name": "Completo italiano",
+        "price": 2490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 100,
+        "minStock": 20,
+        "description": "Salchicha sureña, tomate, palta y mayonesa casera.",
+        "quantity": 1
+      }
+    ],
+    "total": 51390,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-24T23:35:55.832Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "697557687dfc48f9a076bbbd",
+    "items": [
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 37,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741ac111add9399ac34785",
+        "name": "Hamburguesa Cuarto de Libra",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 37,
+        "minStock": 10,
+        "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa.",
+        "quantity": 1
+      },
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 95,
+        "quantity": 1
+      }
+    ],
+    "total": 18970,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-24T23:36:08.713Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "697557db7dfc48f9a076bbc0",
+    "items": [
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 36,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      },
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 11,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 1
+      }
+    ],
+    "total": 11980,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-24T23:38:03.298Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "697557ea7dfc48f9a076bbc1",
+    "items": [
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 10,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 1
+      }
+    ],
+    "total": 4990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-24T23:38:18.138Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69755e64cc8da80b7dfc5ec1",
+    "items": [
+      {
+        "_id": "69741caf11add9399ac3478c",
+        "name": "Completo ",
+        "price": 2990,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 98,
+        "minStock": 20,
+        "description": "Salchicha sureña, tomate, palta, chucrut y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741cde11add9399ac3478d",
+        "name": "Completo dinámico",
+        "price": 3490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 97,
+        "minStock": 20,
+        "description": "Salchicha Llanquihue, tomate, palta, chucrut, salsa americana y mayonesa casera.",
+        "quantity": 3
+      }
+    ],
+    "total": 13460,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-25T00:05:55.999Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69755e6bcc8da80b7dfc5ec2",
+    "items": [
+      {
+        "_id": "6969a5ebfd462433768fccac",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 9,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales",
+        "quantity": 1
+      }
+    ],
+    "total": 4990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-25T00:06:03.559Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69755f58cc8da80b7dfc5ec3",
+    "items": [
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 35,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      },
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 94,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ac111add9399ac34785",
+        "name": "Hamburguesa Cuarto de Libra",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 36,
+        "minStock": 10,
+        "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa.",
+        "quantity": 1
+      }
+    ],
+    "total": 18970,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-25T00:10:00.524Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "697560bccc8da80b7dfc5ec5",
+    "items": [
+      {
+        "_id": "69756072cc8da80b7dfc5ec4",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 100,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales.",
+        "quantity": 1
+      }
+    ],
+    "total": 4990,
+    "paymentMethod": "tarjeta",
+    "date": "2026-01-25T00:15:56.194Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  },
+  {
+    "_id": "69756eec3a42cf3ce7b58c16",
+    "items": [
+      {
+        "_id": "69643225bd97da1983b6a3a3",
+        "name": "Hamburguesa Clasica",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "description": "125Grs hamburguesa casera, lechuga, tomate y mayonesa.",
+        "minStock": 10,
+        "stock": 93,
+        "quantity": 1
+      },
+      {
+        "_id": "69741ac111add9399ac34785",
+        "name": "Hamburguesa Cuarto de Libra",
+        "price": 5990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 35,
+        "minStock": 10,
+        "description": "125Grs Hamburguesa casera, queso cheddar, cebolla morada, pepinillo y salsa.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741b3a11add9399ac34786",
+        "name": "Hamburguesa BBQ",
+        "price": 6990,
+        "categoryId": "696431eebd97da1983b6a3a1",
+        "categoryName": "Hamburguesa",
+        "stock": 34,
+        "minStock": 10,
+        "description": "125Grs hamburguesa casera, queso cheddar, tocino, champiñones salteado y salsa BBQ.",
+        "quantity": 1
+      },
+      {
+        "_id": "69756072cc8da80b7dfc5ec4",
+        "name": "Papas Fritas Grandes",
+        "price": 4990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 99,
+        "minStock": 10,
+        "description": "500Grs Papas Fritas Naturales.",
+        "quantity": 1
+      },
+      {
+        "_id": "696c0149ead683e149a42728",
+        "name": "Papas Fritas Chicas",
+        "price": 2990,
+        "categoryId": "6969a5cdfd462433768fccab",
+        "categoryName": "Papas Fritas",
+        "stock": 92,
+        "minStock": 10,
+        "description": "200Grs Papas Fritas Naturales.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741ba611add9399ac34787",
+        "name": "Churrasco Italiano",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 32,
+        "minStock": 10,
+        "description": "Carne de res, tomate, palta y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "6964323cbd97da1983b6a3a4",
+        "name": "Churrasco Chacarero",
+        "price": 4990,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 91,
+        "description": "Carne de res, tomate, poroto verde, ají verde y mayonesa casera.",
+        "minStock": 10,
+        "quantity": 1
+      },
+      {
+        "_id": "69741bda11add9399ac34788",
+        "name": "Churrasco Barros Luco",
+        "price": 5490,
+        "categoryId": "696431fbbd97da1983b6a3a2",
+        "categoryName": "Sandwich",
+        "stock": 48,
+        "minStock": 10,
+        "description": "Carne de res y queso fundido.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741cde11add9399ac3478d",
+        "name": "Completo dinámico",
+        "price": 3490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 94,
+        "minStock": 20,
+        "description": "Salchicha Llanquihue, tomate, palta, chucrut, salsa americana y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741caf11add9399ac3478c",
+        "name": "Completo ",
+        "price": 2990,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 97,
+        "minStock": 20,
+        "description": "Salchicha sureña, tomate, palta, chucrut y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "69741c5b11add9399ac3478b",
+        "name": "Completo italiano",
+        "price": 2490,
+        "categoryId": "6974185911add9399ac34783",
+        "categoryName": "Completos",
+        "stock": 99,
+        "minStock": 20,
+        "description": "Salchicha sureña, tomate, palta y mayonesa casera.",
+        "quantity": 1
+      },
+      {
+        "_id": "697557b67dfc48f9a076bbbf",
+        "name": "Pepsi Express",
+        "price": 700,
+        "categoryId": "697418c211add9399ac34784",
+        "categoryName": "Bebidas",
+        "stock": 100,
+        "minStock": 10,
+        "description": "220cc",
+        "quantity": 1
+      },
+      {
+        "_id": "6975579f7dfc48f9a076bbbe",
+        "name": "Coca cola Express",
+        "price": 700,
+        "categoryId": "697418c211add9399ac34784",
+        "categoryName": "Bebidas",
+        "stock": 100,
+        "minStock": 10,
+        "description": "220cc",
+        "quantity": 1
+      }
+    ],
+    "total": 52790,
+    "paymentMethod": "efectivo",
+    "date": "2026-01-25T01:16:28.328Z",
+    "sellerId": "69657a7bf2727d7f34b8348d",
+    "sellerName": "Patricio Caceres"
+  }
+]

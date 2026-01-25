@@ -1,0 +1,179 @@
+/**
+ * ARCHIVO: modals.css
+ * FUNCIÓN: Diseño de Ventanas Emergentes (Modales)
+ * DESCRIPCIÓN: Este archivo controla los cuadros que aparecen para editar usuarios,
+ * confirmar cuando borramos algo o avisar que el stock está bajo.
+ */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s forwards;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    padding: 2.5rem;
+    width: 95%;
+    max-width: 520px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.modal-header h2,
+.modal-header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* BOTÓN DE CIERRE (X) */
+.btn-close-modal {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-close-modal:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* FORMULARIOS DENTRO DE MODALES */
+.modal-form label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Los inputs de modal usan .input-styled global */
+
+/* BOTONES DE ACCIÓN DEL MODAL */
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+
+/* MODAL DE ALERTA (Stock Crítico) */
+.stock-alert-modal {
+    border: 2px solid #ef4444 !important;
+    text-align: center;
+}
+
+.confirm-modal-content {
+    max-width: 450px !important;
+    text-align: center;
+}
+
+.alert-icon-container {
+    width: 80px;
+    height: 80px;
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    border: 2px solid #ef4444;
+}
+
+.alert-icon {
+    font-size: 40px;
+}
+
+.alert-title {
+    color: #ef4444;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.alert-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.alert-text {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* OVERLAY DE ÉXITO */
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    animation: fadeIn 0.3s;
+}
+
+.success-content {
+    text-align: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    background: #10b981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.4);
+    animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.success-icon span {
+    font-size: 60px;
+    color: white;
+}
+
+.success-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.success-subtitle {
+    color: #94a3b8;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,247 @@
+/**
+ * ARCHIVO: pos.css
+ * FUNCIÓN: Diseño del Punto de Venta
+ * DESCRIPCIÓN: Acá definí el layout de dos columnas: a la izquierda los productos 
+ * con sus fotos/nombres y a la derecha el carrito de compras dinámico.
+ */
+
+.pos-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.pos-content {
+    display: flex;
+    /* Divide menú y carrito de forma horizontal */
+    gap: 20px;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* LADO IZQUIERDO: Menú y Categorías */
+.menu-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PESTAÑAS PARA FILTRAR CATEGORÍAS */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    /* Permite scroll horizontal si hay muchas categorías */
+    padding-bottom: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: white;
+    color: var(--dark);
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.tab.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* DISEÑO DE LAS TARJETAS DE PRODUCTO */
+.products-grid {
+    display: grid;
+    /* Cuadrícula adaptable que ajusta el número de columnas según el ancho */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.product-card p {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* LADO DERECHO: El Carrito de Compras */
+.cart-side {
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    color: var(--dark);
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    /* Scroll independiente para el carrito */
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-name {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-item-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem;
+}
+
+.btn-group {
+    display: flex !important;
+    gap: 0.25rem;
+}
+
+/* BOTÓN FINAL DE PAGO (Checkout) */
+/* .btn-primary y .btn-accent se manejan globalmente */
+
+/* BOTONES DE CANTIDAD (+ y -) */
+.btn-qty,
+.btn-remove {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.btn-qty-plus {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.btn-qty-minus {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.btn-remove {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+/* --- ESTILOS DEL MODAL DE PAGO --- */
+.payment-methods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.payment-method-btn {
+    flex-direction: column;
+    padding: 1.5rem !important;
+    height: auto !important;
+}
+
+.payment-method-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+}
+
+.payment-method-btn.selected {
+    background: rgba(99, 102, 241, 0.2);
+    border: 2px solid #6366f1 !important;
+}
+
+.payment-method-icon {
+    font-size: 2rem;
+}
+
+.cash-input {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cash-input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.change-display {
+    margin-top: 1rem;
+    text-align: right;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.total-summary {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-label-light {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.total-value-large {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn-confirm {
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-confirm:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

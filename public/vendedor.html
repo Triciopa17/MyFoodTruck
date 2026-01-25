@@ -1,0 +1,138 @@
+<!-- 
+    PÁGINA: vendedor.html (Punto de Venta)
+    DESCRIPCIÓN: Esta es la interfaz que usa el vendedor.
+    Permite seleccionar productos, gestionar el carrito y procesar el pago rápidamente.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta | MyFoodtruck</title>
+
+    <!-- Estilos exclusivos para la interfaz del Punto de Venta (POS) -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pos.css"> <!-- Layout de dos columnas (Menú y Carrito) -->
+    <link rel="stylesheet" href="css/modals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Verificación de seguridad -->
+    <script src="js/controlacceso.js"></script>
+    <script>
+        checkAuth(); // Verifica que el usuario tenga una sesión activa
+    </script>
+
+    <div class="dashboard-container">
+        <!-- ÁREA PRINCIPAL DEL POS -->
+        <main class="pos-main">
+            <header class="content-header">
+                <h1>Punto de Venta</h1>
+                <div class="user-info">
+                    <span id="seller-name">Vendedor</span>
+                    <a href="#" class="btn-sm-profile" onclick="openProfileModal()">Mi Perfil</a>
+                    <button onclick="logout()" class="btn-sm-logout">Salir</button>
+                </div>
+            </header>
+
+            <div class="pos-content">
+                <!-- LADO IZQUIERDO: Selección de Productos -->
+                <div class="menu-side">
+                    <!-- Pestañas de categorías (generadas por JS) -->
+                    <div id="categories-tabs" class="tabs"></div>
+                    <!-- Cuadrícula de productos (generada por JS) -->
+                    <div id="products-grid" class="products-grid"></div>
+                </div>
+
+                <!-- LADO DERECHO: Carrito de Compras -->
+                <aside class="cart-side">
+                    <h2>Carrito</h2>
+                    <div id="cart-items" class="cart-items"></div>
+                    <!-- Resumen y Botón de Cobro -->
+                    <div class="cart-footer">
+                        <div class="total-row">
+                            <span>Total</span>
+                            <span id="cart-total">$0</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="processSale()">Cobrar</button>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- MODAL DE PAGO: Gestión de Efectivo y Vuelto -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h2>💳 Finalizar Venta</h2>
+            </div>
+
+            <div class="input-group">
+                <p class="total-label-light" style="margin-bottom: 1rem;">Seleccione método de pago:</p>
+                <div class="payment-methods-grid">
+                    <button id="btn-efectivo" class="btn btn-secondary payment-method-btn"
+                        onclick="selectPaymentMethod('efectivo')">
+                        <span class="payment-method-icon">💵</span>
+                        <span>Efectivo</span>
+                    </button>
+                    <button id="btn-tarjeta" class="btn btn-secondary payment-method-btn"
+                        onclick="selectPaymentMethod('tarjeta')">
+                        <span class="payment-method-icon">💳</span>
+                        <span>Tarjeta</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sección dinámica -->
+            <div id="cash-input-section" class="input-group" style="display: none;">
+                <label class="input-label">Efectivo Recibido</label>
+                <input type="number" id="cash-received" class="input-styled cash-input" placeholder="Ej: 5000">
+                <div id="change-display" class="change-display"></div>
+            </div>
+
+            <div class="total-summary">
+                <span class="total-label-light">Total a Pagar:</span>
+                <span id="payment-total-amount" class="total-value-large">$0</span>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closePaymentModal()">Cancelar</button>
+                <button id="confirm-sale-btn" class="btn btn-accent" style="width: 100%;" disabled>Confirmar
+                    Venta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA DE ÉXITO -->
+    <div id="success-overlay" class="success-overlay" style="display: none;">
+        <div class="success-content">
+            <div class="success-icon">
+                <span>✓</span>
+            </div>
+            <h2 class="success-title">Venta Finalizada</h2>
+            <p class="success-subtitle">La transacción se ha registrado con éxito.</p>
+        </div>
+    </div>
+
+    <!-- MODAL DE ALERTAS -->
+    <div id="stock-alert-modal" class="modal">
+        <div class="modal-content stock-alert-modal" style="max-width: 450px;">
+            <div class="alert-icon-container">
+                <span class="alert-icon">⚠️</span>
+            </div>
+            <h2 class="alert-title">Aviso de Stock</h2>
+            <div id="stock-alert-messages" class="alert-messages"></div>
+            <button onclick="closeStockAlerts()" class="btn btn-danger" style="width: 100%;">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Lógica -->
+    <script src="js/controlacceso.js"></script>
+    <script src="js/perfil.js"></script>
+    <script src="js/pantallaventas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "69657a7bf2727d7f34b8348d",
+    "username": "Patricio",
+    "password": "$2a$10$xD6HBmrv10KbI59CMYg3SOzLrDJHo1CG7KpUnJb1tLsSJ6QUQaYvy",
+    "role": "vendedor",
+    "name": "Patricio Caceres",
+    "email": "p.caceres1517@gmail.com"
+  },
+  {
+    "_id": "69642f79cb1a5e49022fca06",
+    "username": "admin",
+    "password": "$2a$10$NscgKizg09H2Lrx77NjMT.UXbVOGbSjEgdpsRjLeqx8.dHfRzZ73W",
+    "role": "admin",
+    "name": "Administrador"
+  }
+]
